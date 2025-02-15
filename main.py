@@ -18,8 +18,10 @@ st.set_page_config(
 with open('assets/styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-@st.cache_data
-def load_data():
+# Add version parameter to force cache invalidation
+@st.cache_data(ttl=60)  # Cache expires after 60 seconds
+def load_data(version=1):
+    """Load and process the JSON data"""
     with open('attached_assets/bfarm_entries.json') as f:
         data = json.load(f)
     df = pd.DataFrame(data)
@@ -27,7 +29,7 @@ def load_data():
     return df
 
 # Initialize
-df = load_data()
+df = load_data(version=datetime.now().timestamp())  # Force cache refresh
 data_processor = DataProcessor(df)
 visualizer = Visualizer()
 

@@ -5,6 +5,8 @@ from typing import List, Optional
 class DataProcessor:
     def __init__(self, df):
         self.df = df
+        # Clean data - remove rows with missing company or product
+        self.df = self.df.dropna(subset=['company', 'product'])
         self.df['date'] = pd.to_datetime(self.df['date'])
 
     def filter_data(self, start_date, end_date, companies: Optional[List[str]]=None, category=None):

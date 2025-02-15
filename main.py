@@ -42,21 +42,34 @@ date_range = st.sidebar.date_input(
     value=(min_date, max_date)
 )
 
-# Company filter
+# Company multiselect filter
 companies = ['All'] + sorted(df['company'].unique().tolist())
-selected_company = st.sidebar.selectbox("Select Company", companies)
+selected_companies = st.sidebar.multiselect(
+    "Select Companies",
+    options=companies[1:],  # Exclude 'All' from options
+    default=None,
+    help="Select one or more companies to compare"
+)
 
 # Category filter
 categories = ['All'] + sorted(df['category'].unique().tolist())
 selected_category = st.sidebar.selectbox("Select Category", categories)
 
 # Filter data based on selections
-filtered_df = data_processor.filter_data(
-    date_range[0],
-    date_range[1],
-    selected_company if selected_company != 'All' else None,
-    selected_category if selected_category != 'All' else None
-)
+if selected_companies:
+    filtered_df = data_processor.filter_data(
+        date_range[0],
+        date_range[1],
+        selected_companies,  # Pass list of companies
+        selected_category if selected_category != 'All' else None
+    )
+else:
+    filtered_df = data_processor.filter_data(
+        date_range[0],
+        date_range[1],
+        None,
+        selected_category if selected_category != 'All' else None
+    )
 
 # Main dashboard
 st.title("Field Safety Notice (FSN) KPI Dashboard")
@@ -78,7 +91,12 @@ tab1, tab2, tab3 = st.tabs(["Time Analysis", "Company Analysis", "Product Analys
 
 with tab1:
     # Time series chart
-    fig_timeline = visualizer.create_timeline_chart(filtered_df)
+    if selected_companies:
+        # Create separate lines for each company
+        fig_timeline = visualizer.create_timeline_chart(filtered_df, group_by='company')
+    else:
+        # Single line for all companies
+        fig_timeline = visualizer.create_timeline_chart(filtered_df)
     st.plotly_chart(fig_timeline, use_container_width=True)
 
 with tab2:

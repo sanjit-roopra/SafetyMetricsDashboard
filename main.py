@@ -118,8 +118,10 @@ with tab3:
 
 # Data table section
 st.subheader("FSN Details")
+# Sort filtered dataframe by date in descending order
+sorted_df = filtered_df.sort_values('date', ascending=False)
 st.dataframe(
-    filtered_df[['date', 'company', 'product', 'title', 'category', 'reference_number', 'link']],
+    sorted_df[['date', 'company', 'product', 'title', 'category', 'reference_number', 'link']],
     use_container_width=True,
     column_config={
         "link": st.column_config.LinkColumn("PDF Link"),

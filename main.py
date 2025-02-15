@@ -25,7 +25,12 @@ def load_data(version=1):
     with open('attached_assets/bfarm_entries.json') as f:
         data = json.load(f)
     df = pd.DataFrame(data)
+    # Convert date and clean data
     df['date'] = pd.to_datetime(df['date'])
+    # Remove rows with missing or empty company/product
+    df = df.dropna(subset=['company', 'product'])
+    df = df[df['company'].str.strip() != '']
+    df = df[df['product'].str.strip() != '']
     return df
 
 # Initialize
@@ -44,11 +49,11 @@ date_range = st.sidebar.date_input(
     value=(min_date, max_date)
 )
 
-# Company multiselect filter
-companies = ['All'] + sorted(df['company'].unique().tolist())
+# Company multiselect filter - exclude empty values
+companies = sorted(df['company'].unique().tolist())
 selected_companies = st.sidebar.multiselect(
     "Select Companies",
-    options=companies[1:],  # Exclude 'All' from options
+    options=companies,
     default=None,
     help="Select one or more companies to compare"
 )

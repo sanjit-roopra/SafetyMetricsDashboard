@@ -1,0 +1,86 @@
+**Design Brief: FSN KPI Dashboard**
+
+### **Objective**
+
+Develop a KPI dashboard to track Field Safety Notices (FSNs) over companies and products based on JSON data. The dashboard should provide insights through visualizations and searchable tables, allowing deep dives into company and product trends.
+
+### **Data Structure**
+
+Each FSN entry follows this JSON format (JSON is attached):
+
+```json
+ {
+        "product": "ORBIS Medication",
+        "company": "DH Healthcare GmbH",
+        "date": "2025-02-11",
+        "title": "Dringende Sicherheitsinformation zu ORBIS Medication von DH Healthcare GmbH",
+        "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
+        "reference_number": "04401/25",
+        "link": "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/09/2025/04401-25_kundeninfo_de.pdf?__blob=publicationFile"
+    }
+
+```
+
+### **Key Features**
+
+### **1. Dashboard Overview**
+
+- **Company-Level Analysis:**
+    - Aggregated FSN count per company.
+    - Ability to drill down when multiple products exist for a company.
+- **Product-Level Analysis:**
+    - FSN count by product.
+    - Comparison of affected products across different companies.
+- **Time-Based Analysis:**
+    - Adjustable time range filter.
+    - Line chart for FSNs over time.
+
+### **2. Entry-Level Details**
+
+- Clickable FSN entries with a link to the provided PDF document.
+- Detailed view of a single FSN entry.
+
+### **3. Searchable Table View**
+
+- Table containing all FSN entries.
+- Search and filter functionality based on:
+    - Product
+    - Company
+    - Category
+    - Reference Number
+    - Date
+
+### **4. Comparison Features**
+
+- Compare multiple companies and products to identify trends.
+- Visualize which companies have higher FSN counts.
+- Identify products with the most safety notices.
+
+### **UI & UX Considerations**
+
+- **Charts & Visuals:**
+    - Bar charts for company and product FSN counts.
+    - Line chart for FSNs over time with adjustable date range.
+    - Interactive filters for dynamic data exploration.
+- **Table Layout:**
+    - Paginated and sortable.
+    - Searchable with multiple filters.
+- **Navigation & Usability:**
+    - Clear layout with an overview page and detailed views.
+    - Clickable elements for deep dives.
+
+### **Technical Requirements**
+
+- Backend or frontend processing of JSON data.
+- Charting library (e.g., Chart.js, D3.js, Recharts) for visualizations.
+- Table component with search and filtering (e.g., DataTables, AG Grid, React Table).
+- Responsive design for desktop and mobile usage.
+
+### **Deliverables**
+
+- A fully functional dashboard with:
+    - Overview KPIs and charts
+    - Searchable table
+    - Deep-dive capability into company and product details
+    - FSN entry details with PDF links
+- Clean and maintainable code structure.

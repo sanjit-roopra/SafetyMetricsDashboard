@@ -44,9 +44,16 @@ st.sidebar.title("Filters")
 # Date range filter
 min_date = df['date'].min().date()
 max_date = df['date'].max().date()
-date_range = st.sidebar.date_input(
-    "Select Date Range",
-    value=(min_date, max_date),
+start_date = st.sidebar.date_input(
+    "Start Date",
+    value=min_date,
+    min_value=min_date,
+    max_value=max_date
+)
+
+end_date = st.sidebar.date_input(
+    "End Date",
+    value=max_date,
     min_value=min_date,
     max_value=max_date
 )
@@ -66,8 +73,8 @@ selected_category = st.sidebar.selectbox("Select Category", categories)
 
 # Filter data based on selections
 filtered_df = data_processor.filter_data(
-    date_range[0] if isinstance(date_range, tuple) else min_date,
-    date_range[1] if isinstance(date_range, tuple) and len(date_range) == 2 else max_date,
+    start_date,
+    end_date,
     selected_companies,  # Will pass None if empty list
     selected_category if selected_category != 'All' else None
 )

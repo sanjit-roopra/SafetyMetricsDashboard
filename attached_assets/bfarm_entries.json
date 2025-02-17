@@ -334,7 +334,7 @@
     },
     {
         "product": "CGM MEDICO",
-        "company": "CGM Clinical Europe GmbH",
+        "company": "CompuGroup Medical Deutschland AG",
         "date": "2024-05-07",
         "title": "Dringende Sicherheitsinformation zu CGM MEDICO von CGM Clinical Europe GmbH",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -919,7 +919,7 @@
     },
     {
         "product": "Guardian Connect Application",
-        "company": "Medtronic Minimed",
+        "company": "Medtronic Inc",
         "date": "2022-12-16",
         "title": "Dringende Sicherheitsinformation zu Guardian Connect Application von Medtronic Minimed",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -1297,7 +1297,7 @@
     },
     {
         "product": "Guardian Connect Application",
-        "company": "Medtronic Minimed",
+        "company": "Medtronic Inc",
         "date": "2019-05-29",
         "title": "Dringende Sicherheitsinformation zu Guardian Connect Application von Medtronic Minimed",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -1387,7 +1387,7 @@
     },
     {
         "product": "Guardian Connect Application",
-        "company": "Medtronic Minimed",
+        "company": "Medtronic Inc",
         "date": "2018-07-09",
         "title": "Dringende Sicherheitsinformation zu Guardian Connect Application von Medtronic Minimed",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -1459,7 +1459,7 @@
     },
     {
         "product": "Beweisermittler EV3602",
-        "company": "Randox Laboratories Ltd.",
+        "company": "Randox Laboratories Ltd",
         "date": "2016-10-10",
         "title": "Dringende Sicherheitsmitteilung für Beweisermittler EV3602, Randox Laboratories Ltd.",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -1603,7 +1603,7 @@
     },
     {
         "product": "externen Fixateur Spatial Frame",
-        "company": "Smith & Nephew Orthopaedics GmbH",
+        "company": "Smith & Nephew, Inc., Orthopaedics",
         "date": "2012-02-15",
         "title": "Fehler der Software Artikelnummer 71070401 für externen Fixateur Spatial Frame, Smith & Nephew Orthopaedics GmbH",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -1630,7 +1630,7 @@
     },
     {
         "product": "Vitrea Core 1.2 und 1.3, Vitrea Enterprise Suite",
-        "company": "Vital Images, Inc.",
+        "company": "Vital Images",
         "date": "2011-03-24",
         "title": "Dringende Sicherheitsinformation zu Vitrea Core 1.2 und 1.3, Vitrea Enterprise Suite, Vital Images, Inc.",
         "category": "Medizinische Datenverarbeitung (Software)",
@@ -2143,7 +2143,7 @@
     },
     {
         "product": "JiveX",
-        "company": "VISUS Technology Transfer GmbH",
+        "company": "VISUS Health IT GmbH",
         "date": "2020-06-15",
         "title": "Dringende Sicherheitsinformation zu JiveX von VISUS Technology Transfer GmbH",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2296,7 +2296,7 @@
     },
     {
         "product": "Patient Support",
-        "company": "Philips Medical Systems DMC GmbH",
+        "company": "Philips Healthcare",
         "date": "2018-07-09",
         "title": "Dringende Sicherheitsinformation zu Patient Support von Philips Medical Systems DMC GmbH",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2395,7 +2395,7 @@
     },
     {
         "product": "JiveX",
-        "company": "VISUS Technology Transfer GmbH",
+        "company": "VISUS Health IT GmbH",
         "date": "2017-06-23",
         "title": "Dringende Sicherheitsinformation zu JiveX von VISUS Technology Transfer GmbH",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2449,7 +2449,7 @@
     },
     {
         "product": "Synapse PACS-Software",
-        "company": "FUJIFILM Medical Systems USA Inc.",
+        "company": "FUJIFILM Medical System U.S.A., Inc.",
         "date": "2016-10-07",
         "title": "Dringende Sicherheitsmitteilung für Synapse PACS-Software, FUJIFILM Medical Systems USA Inc.",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2485,7 +2485,7 @@
     },
     {
         "product": "Volcano-Systeme s5, s5i, CORE und CORE Mobile mit Softwareversionen v3.2.x / v3.3 / v3.4",
-        "company": "Philips Volcano",
+        "company": "Philips Healthcare",
         "date": "2016-06-30",
         "title": "Dringende Sicherheitsmitteilung für Volcano-Systeme s5, s5i, CORE und CORE Mobile mit Softwareversionen v3.2.x / v3.3 / v3.4, Philips Volcano",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2539,7 +2539,7 @@
     },
     {
         "product": "Centricity PACS-IW-Versionen 3.5.0 bis 3.7.3.9 SP2, 3.7.3 SPA10 und 4.0.1",
-        "company": "GE Healthcare IT",
+        "company": "GE Healthcare",
         "date": "2015-11-12",
         "title": "Sicherheitshinweis zu Centricity PACS-IW-Versionen 3.5.0 bis 3.7.3.9 SP2, 3.7.3 SPA10 und 4.0.1, GE Healthcare IT",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2548,7 +2548,7 @@
     },
     {
         "product": "Centricity PACS-IW mit Universal Viewer und Centricity Universal Viewer",
-        "company": "GE Healthcare IT",
+        "company": "GE Healthcare",
         "date": "2015-11-12",
         "title": "Sicherheitsinformation zum Produkt Centricity PACS-IW mit Universal Viewer und Centricity Universal Viewer, GE Healthcare IT",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2593,7 +2593,7 @@
     },
     {
         "product": "Volcano S5 und Core Serie mit System-Softwareversionen 3.3/3.4",
-        "company": "Volcano Corporation",
+        "company": "Volcano Corporation San Diego",
         "date": "2015-07-14",
         "title": "Korrektive Maßnahme für Volcano S5 und Core Serie mit System-Softwareversionen 3.3/3.4, Volcano Corporation",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2602,7 +2602,7 @@
     },
     {
         "product": "Q-Station-Software",
-        "company": "Philips Healthcare – Ultrasound",
+        "company": "Philips Healthcare",
         "date": "2015-06-30",
         "title": "Sicherheitsinformation zur Q-Station-Software, Philips Healthcare – Ultrasound",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2611,7 +2611,7 @@
     },
     {
         "product": "Centricity PACS-IW mit Universal Viewer",
-        "company": "GE Healthcare Systems",
+        "company": "GE Healthcare",
         "date": "2015-06-15",
         "title": "Korrektive Maßnahme für das Produkt Centricity PACS-IW mit Universal Viewer, GE Healthcare Systems",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2710,7 +2710,7 @@
     },
     {
         "product": "JiveX Mammo Report Manager",
-        "company": "VISUS Technology Transfer GmbH",
+        "company": "VISUS Health IT GmbH",
         "date": "2015-01-20",
         "title": "Sicherheitsinformation zum JiveX Mammo Report Manager, VISUS Technology Transfer GmbH",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2737,7 +2737,7 @@
     },
     {
         "product": "Philips Ultrasound",
-        "company": "Philips Healthcare – Ultrasound",
+        "company": "Philips Healthcare",
         "date": "2014-12-29",
         "title": "Sicherheitsinformation zur QLAB-Software von Philips Ultrasound, Philips Healthcare – Ultrasound",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2764,7 +2764,7 @@
     },
     {
         "product": "IMPAX EE R20 Release XIII",
-        "company": "Agfa Healthcare",
+        "company": "Agfa HealthCare N.V.",
         "date": "2014-09-30",
         "title": "Sicherheitsinformation zum Produkt IMPAX EE R20 Release XIII, Agfa Healthcare",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2881,7 +2881,7 @@
     },
     {
         "product": "VitreaCore Softwareversionen 6.0, 6.1, 6.2, 6.3 (außer 6.3.1), 6.4 (außer 6.4.4 und 6.4.5) sowie ihren Upgrades, und 6.5",
-        "company": "Vital Images, Inc.",
+        "company": "Vital Images",
         "date": "2013-12-13",
         "title": "Sicherheitshinweis für VitreaCore Softwareversionen 6.0, 6.1, 6.2, 6.3 (außer 6.3.1), 6.4 (außer 6.4.4 und 6.4.5) sowie ihren Upgrades, und 6.5, Vital Images, Inc.",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2935,7 +2935,7 @@
     },
     {
         "product": "Bildarchivierungs- und Kommunikationssystem IMPAX DB Server",
-        "company": "Agfa Healthcare",
+        "company": "Agfa HealthCare N.V.",
         "date": "2013-09-04",
         "title": "Sicherheitshinweis zum Bildarchivierungs- und Kommunikationssystem IMPAX DB Server, Agfa Healthcare",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -2971,7 +2971,7 @@
     },
     {
         "product": "Anwendung Vitrea CT Brain Perfusion 2D",
-        "company": "Vital Images, Inc.",
+        "company": "Vital Images",
         "date": "2013-04-25",
         "title": "Sicherheitshinweis zur Anwendung Vitrea CT Brain Perfusion 2D, Vital Images, Inc.",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -3025,7 +3025,7 @@
     },
     {
         "product": "mint Lesion",
-        "company": "Mint medical",
+        "company": "Mint Medical GmbH",
         "date": "2012-11-05",
         "title": "Dringende Sicherheitsinformation zum Produkt \"mint Lesion\", Mint medical",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -3061,7 +3061,7 @@
     },
     {
         "product": "IMPAX® Cardiovascular (IMPAX CV) Produkten",
-        "company": "Agfa HealthCare",
+        "company": "Agfa HealthCare N.V.",
         "date": "2012-10-04",
         "title": "Sicherheitsinformation zu IMPAX® Cardiovascular (IMPAX CV) Produkten, Agfa HealthCare",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
@@ -3070,7 +3070,7 @@
     },
     {
         "product": "Volcano s5/s5i™ Imaging System",
-        "company": "Volcano",
+        "company": "Philips Healthcare",
         "date": "2012-09-26",
         "title": "Sicherheitshinweis zum Volcano s5/s5i™ Imaging System, Volcano",
         "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",

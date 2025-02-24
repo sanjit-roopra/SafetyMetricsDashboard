@@ -18,6 +18,17 @@ st.set_page_config(
 with open('assets/styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+# Attempt to get the device width in the main area
+try:
+    from streamlit_javascript import st_javascript
+    # Run in main area with a unique key to avoid caching issues
+    raw_width = st_javascript("window.innerWidth", key="device_width")
+    device_width = int(raw_width)
+except Exception:
+    # Fallback (assume desktop)
+    device_width = 1024
+
+st.write("Device width:", device_width)  # Debug output
 # Add version parameter to force cache invalidation
 @st.cache_data(ttl=60)  # Cache expires after 60 seconds
 def load_data(version=1):
@@ -41,22 +52,35 @@ visualizer = Visualizer()
 # Sidebar filters
 st.sidebar.title("Filters")
 
-# Date range filter
-min_date = df['date'].min().date()
-max_date = df['date'].max().date()
-start_date = st.sidebar.date_input(
-    "Start Date",
-    value=min_date,
-    min_value=min_date,
-    max_value=max_date
-)
+# Determine placement of date filters based on screen width
+if device_width < 700:
+    # Mobile: date filters in main section later below
+    start_date_main = True
+else:
+    # Desktop: put them in the sidebar
+    start_date_main = False
 
-end_date = st.sidebar.date_input(
-    "End Date",
-    value=max_date,
-    min_value=min_date,
-    max_value=max_date
-)
+# If on desktop, render date filters in sidebar
+if not start_date_main:
+    min_date = df['date'].min().date()
+    max_date = df['date'].max().date()
+    start_date = st.sidebar.date_input(
+        "Start Date",
+        value=min_date,
+        min_value=min_date,
+        max_value=max_date
+    )
+    end_date = st.sidebar.date_input(
+        "End Date",
+        value=max_date,
+        min_value=min_date,
+        max_value=max_date
+    )
+else:
+    # Just define min and max dates for later (in case filters are later in
+    # the main section)
+    min_date = df['date'].min().date()
+    max_date = df['date'].max().date()
 
 # Company multiselect filter - exclude empty values
 companies = sorted(df['company'].unique().tolist())
@@ -71,6 +95,27 @@ selected_companies = st.sidebar.multiselect(
 categories = ['All'] + sorted(df['category'].unique().tolist())
 selected_category = st.sidebar.selectbox("Select Category", categories)
 
+# Main dashboard title
+st.title("Field Safety Notice (FSN) KPI Dashboard")
+
+# If mobile, display date filters in main section now
+if start_date_main:
+    col_date1, col_date2 = st.columns(2)
+    with col_date1:
+        start_date = st.date_input(
+            "Start Date",
+            value=min_date,
+            min_value=min_date,
+            max_value=max_date
+        )
+    with col_date2:
+        end_date = st.date_input(
+            "End Date",
+            value=max_date,
+            min_value=min_date,
+            max_value=max_date
+        )
+
 # Filter data based on selections
 filtered_df = data_processor.filter_data(
     start_date,
@@ -79,10 +124,6 @@ filtered_df = data_processor.filter_data(
     selected_category if selected_category != 'All' else None
 )
 
-# Main dashboard
-st.title("Field Safety Notice (FSN) KPI Dashboard")
-
-# After filtering the data, add this check:
 if filtered_df.empty:
     st.warning("No data available for the selected filters")
 else:

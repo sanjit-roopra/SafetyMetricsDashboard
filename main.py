@@ -28,7 +28,7 @@ except Exception:
     # Fallback (assume desktop)
     device_width = 1024
 
-st.write("Device width:", device_width)  # Debug output
+#st.write("Device width:", device_width)  # Debug output
 # Add version parameter to force cache invalidation
 @st.cache_data(ttl=60)  # Cache expires after 60 seconds
 def load_data(version=1):

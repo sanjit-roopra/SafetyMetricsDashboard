@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from utils.data_processor import DataProcessor
 from utils.visualization import Visualizer
 from datetime import datetime, timedelta
+from streamlit_javascript import st_javascript
 import json
 
 # Page config
@@ -20,7 +21,6 @@ with open('assets/styles.css') as f:
 
 # Attempt to get the device width in the main area
 try:
-    from streamlit_javascript import st_javascript
     # Run in main area with a unique key to avoid caching issues
     raw_width = st_javascript("window.innerWidth", key="device_width")
     device_width = int(raw_width)

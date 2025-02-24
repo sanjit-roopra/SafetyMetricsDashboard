@@ -53,7 +53,7 @@ visualizer = Visualizer()
 st.sidebar.title("Filters")
 
 # Determine placement of date filters based on screen width
-if device_width < 700:
+if device_width < 650:
     # Mobile: date filters in main section later below
     start_date_main = True
 else:

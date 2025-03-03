@@ -28,12 +28,12 @@ except Exception:
     # Fallback (assume desktop)
     device_width = 1024
 
-#st.write("Device width:", device_width)  # Debug output
 # Add version parameter to force cache invalidation
 @st.cache_data(ttl=60)  # Cache expires after 60 seconds
-def load_data(version=1):
-    """Load and process the JSON data"""
-    with open('attached_assets/bfarm_entries.json') as f:
+def load_data(asset, version=1):
+    """Load and process the JSON data from the selected asset"""
+    file_path = f'attached_assets/{asset}'
+    with open(file_path) as f:
         data = json.load(f)
     df = pd.DataFrame(data)
     # Convert date and clean data
@@ -44,13 +44,29 @@ def load_data(version=1):
     df = df[df['product'].str.strip() != '']
     return df
 
-# Initialize
-df = load_data(version=datetime.now().timestamp())  # Force cache refresh
-data_processor = DataProcessor(df)
-visualizer = Visualizer()
-
 # Sidebar filters
 st.sidebar.title("Filters")
+
+# New Filter: Data Source with user-friendly names
+data_source_mapping = {
+    "BFARM Germany": "bfarm_entries.json",
+    "ANSM France": "ansm_entries.json"
+}
+
+data_source_display = st.sidebar.selectbox(
+    "Select Data Source",
+    options=list(data_source_mapping.keys()),
+    index=0,
+    help="Choose which data asset to load"
+)
+
+# Map the display name back to the actual filename
+data_source = data_source_mapping[data_source_display]
+
+# Load data based on selected asset
+df = load_data(asset=data_source, version=datetime.now().timestamp())  # Force cache refresh
+data_processor = DataProcessor(df)
+visualizer = Visualizer()
 
 # Determine placement of date filters based on screen width
 if device_width < 650:
@@ -77,8 +93,7 @@ if not start_date_main:
         max_value=max_date
     )
 else:
-    # Just define min and max dates for later (in case filters are later in
-    # the main section)
+    # Just define min and max dates for later (in case filters are later in the main section)
     min_date = df['date'].min().date()
     max_date = df['date'].max().date()
 

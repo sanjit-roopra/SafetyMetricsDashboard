@@ -2,6 +2,24 @@
     {
         "product": "ORBIS Medication",
         "company": "DH Healthcare GmbH",
+        "date": "2025-03-04",
+        "title": "Dringende Sicherheitsinformation zu ORBIS Medication von DH Healthcare GmbH",
+        "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
+        "reference_number": "07077/25",
+        "link": "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/09/2025/07077-25_kundeninfo_de.pdf?__blob=publicationFile"
+    },
+    {
+        "product": "Hedia Diabetes Assistant",
+        "company": "Hedia ApS",
+        "date": "2025-03-04",
+        "title": "Dringende Sicherheitsinformation zu Hedia Diabetes Assistant von Hedia ApS",
+        "category": "Medizinische Datenverarbeitung (Software) - Medical Apps",
+        "reference_number": "05948/25",
+        "link": "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/09/2025/05948-25_kundeninfo_de.pdf?__blob=publicationFile"
+    },
+    {
+        "product": "ORBIS Medication",
+        "company": "DH Healthcare GmbH",
         "date": "2025-02-11",
         "title": "Dringende Sicherheitsinformation zu ORBIS Medication von DH Healthcare GmbH",
         "category": "Medizinische Datenverarbeitung (Software) - Sonstiges",
@@ -1645,6 +1663,15 @@
         "category": "Medizinische Datenverarbeitung (Software)",
         "reference_number": "00511/08",
         "link": "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/09/2010/00511-08_kundeninfo_de.pdf?__blob=publicationFile"
+    },
+    {
+        "product": "DeepUnity Viewer 2.x",
+        "company": "DH Healthcare GmbH",
+        "date": "2025-03-05",
+        "title": "Dringende Sicherheitsinformation zu DeepUnity Viewer 2.x von DH Healthcare GmbH",
+        "category": "Radiologische Technik - Zusatzgeräte und Zubehör f. d. Röntgendiagnostik/Nuklearmedizin",
+        "reference_number": "01283/25",
+        "link": "https://www.bfarm.de/SharedDocs/Kundeninfos/DE/17/2025/01283-25_kundeninfo_de.pdf?__blob=publicationFile"
     },
     {
         "product": "DeepUnity PACSonWEB",

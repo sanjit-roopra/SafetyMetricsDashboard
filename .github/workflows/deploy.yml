@@ -23,4 +23,4 @@ jobs:
             
             # Restart the container (no rebuild needed)
             cd ..
-            docker-compose restart streamlit
+            docker compose restart streamlit
